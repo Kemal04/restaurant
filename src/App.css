@@ -1,0 +1,68 @@
+.bg-dark-blue {
+    background-color: #011920 !important;
+}
+
+.bg-trans {
+    background-color: transparent !important;
+}
+
+.bg-img-primary {
+    background-image: url('./assets/banners/back.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-img-secondary {
+    background-image: url('./assets/banners/back-2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-img-thread {
+    background-image: url('./assets/cards/10.jpg');
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-img-fourth {
+    background-image: url('./assets/banners/back-3.jpg');
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.img-hover {
+    transition: 0.4s;
+}
+
+.img-hover:hover {
+    transform: translate(0px, -5px);
+}
+
+.menu-border {
+    width: 100%;
+    flex: 1;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #b7b7b7;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.bg-orange {
+    background-color: #ff8700 !important;
+}
+
+.text-orange {
+    color: #ff8700 !important;
+}
+
+.bg-dark-50 {
+    background-color: #04151c!important;
+}
