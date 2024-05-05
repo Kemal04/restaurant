@@ -105,3 +105,59 @@ body {
         transform: rotate(360deg);
     }
 }
+
+.mb-m-50 {
+    margin-bottom: -50px !important;
+}
+
+.chef-img {
+    border-radius: 50% 50% 0 0;
+    height: 650px;
+    width: 500px;
+    object-fit: cover
+}
+
+
+@media screen and (max-width: 769px) {
+    .mb-m-50 {
+        margin-bottom: 50px !important;
+    }
+
+    .about-home-progress {
+        z-index: -2;
+        width: 1px;
+        height: 100%;
+        background-color: #6a6a6a;
+        left: 4%;
+        position: absolute;
+    }
+
+    .about-home-progress-bar {
+        z-index: -1;
+        width: 1px;
+        height: 100vh;
+        background-color: #dcdcdc;
+        position: fixed;
+        top: 0;
+        bottom: 50vh;
+    }
+
+    .star-icon {
+        height: 1.5rem;
+        background-color: #131417;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: sticky;
+        top: 50vh;
+        box-shadow: 0 0 0 .5rem #131417;
+    }
+
+    .chef-img {
+        border-radius: 50% 50% 0 0;
+        height: auto;
+        width: 100%;
+        object-fit: cover
+    }
+
+}
