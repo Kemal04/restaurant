@@ -1,10 +1,10 @@
-import card1 from "../../assets/newCards/1.png";
-import card2 from "../../assets/newCards/2.png";
-import card3 from "../../assets/newCards/3.png";
-import card4 from "../../assets/newCards/4.png";
+import card1 from "../../assets/newCards/1.jpg";
+import card2 from "../../assets/newCards/2.jpg";
+import card3 from "../../assets/newCards/3.jpg";
+import card4 from "../../assets/newCards/4.jpg";
 import card5 from "../../assets/newCards/5.jpg";
-import card6 from "../../assets/newCards/6.png";
-import card7 from "../../assets/newCards/7.png";
+import card6 from "../../assets/newCards/6.jpg";
+import card7 from "../../assets/newCards/7.jpg";
 import starIcon from "../../assets/icons/star.svg";
 import roundedText from "../../assets/icons/circleText.svg";
 import { Link } from 'react-router-dom';
