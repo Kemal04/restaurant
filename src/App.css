@@ -68,7 +68,7 @@ body {
 .about-home-progress {
     z-index: -2;
     width: 1px;
-    height: 100%;
+    height: 145vh;
     background-color: #6a6a6a;
     position: absolute;
 }
@@ -117,6 +117,10 @@ body {
     object-fit: cover
 }
 
+.w-xl-50 {
+    width: 50%;
+}
+
 
 @media screen and (max-width: 769px) {
     .mb-m-50 {
@@ -126,7 +130,7 @@ body {
     .about-home-progress {
         z-index: -2;
         width: 1px;
-        height: 100%;
+        height: 0%;
         background-color: #6a6a6a;
         left: 4%;
         position: absolute;
@@ -135,7 +139,7 @@ body {
     .about-home-progress-bar {
         z-index: -1;
         width: 1px;
-        height: 100vh;
+        height: 0vh;
         background-color: #dcdcdc;
         position: fixed;
         top: 0;
@@ -160,4 +164,56 @@ body {
         object-fit: cover
     }
 
+    .w-xl-50 {
+        width: 100%;
+    }
+
+    .about-img-tumbn {
+        width: 100%!important;
+        height: 220px!important;
+    }
+}
+
+/* ABOUT SECTION  */
+.about-bg-attachment {
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('./assets/about/banner.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    width: 100%;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: #6a6a6a;
+}
+
+.border-dark-light {
+    border-color: #6a6a6a !important;
+}
+
+/* Menu SECTION  */
+.menu-bg-attachment {
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('./assets/menu/banner.jpg');
+    background-position: 0 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    width: 100%;
+}
+
+.menu-card {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 350px;
+    width: 100%;
 }

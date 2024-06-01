@@ -8,8 +8,30 @@ import card7 from "../../assets/newCards/7.jpg";
 import starIcon from "../../assets/icons/star.svg";
 import roundedText from "../../assets/icons/circleText.svg";
 import { Link } from 'react-router-dom';
+import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide'
+import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
 const Home = () => {
+
+    const option1 = {
+        type: 'loop',
+        perPage: 5,
+        focus: 0,
+        omitEnd: true,
+        perMove: 1,
+        pagination: false,
+        arrows: false,
+        autoScroll: {
+            speed: 0.5,
+        },
+        breakpoints:
+        {
+            991: { perPage: 3, gap: '1.5rem', },
+            768: { perPage: 2, gap: '1.5rem', },
+            575: { perPage: 2, gap: '1rem', },
+        }
+    };
+
     return (
         <>
             <div className='border-bottom position-relative' style={{ background: "#131417" }}>
@@ -109,26 +131,75 @@ const Home = () => {
             </div>
 
             <div className='container-fluid px-0' style={{ background: "#131417" }}>
-                <div className='row g-0 mt-5 pt-5'>
-                    <div className='col-xl-2 col-6'>
-                        <img src={card1} alt="" className='img-fluid' style={{ width: "100%", height: "250px", objectFit: "cover" }} />
-                    </div>
-                    <div className='col-xl-2 col-6'>
-                        <img src={card5} alt="" className='img-fluid' style={{ width: "100%", height: "250px", objectFit: "cover" }} />
-                    </div>
-                    <div className='col-xl-2 col-6'>
-                        <img src={card3} alt="" className='img-fluid' style={{ width: "100%", height: "250px", objectFit: "cover" }} />
-                    </div>
-                    <div className='col-xl-2 col-6'>
-                        <img src={card6} alt="" className='img-fluid' style={{ width: "100%", height: "250px", objectFit: "cover" }} />
-                    </div>
-                    <div className='col-xl-2 col-6'>
-                        <img src={card7} alt="" className='img-fluid' style={{ width: "100%", height: "250px", objectFit: "cover" }} />
-                    </div>
-                    <div className='col-xl-2 col-6'>
-                        <img src={card5} alt="" className='img-fluid' style={{ width: "100%", height: "250px", objectFit: "cover" }} />
-                    </div>
-                </div>
+                <Splide options={option1} hasTrack={false} extensions={{ AutoScroll }}>
+                    <SplideTrack>
+                        <SplideSlide>
+                            <img src={card1} alt="" className='img-fluid' style={{ width: "100%", height: "250px", objectFit: "cover", cursor: "pointer" }} />
+                            <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div className="modal-dialog modal-dialog-centered">
+                                    <div className="modal-content">
+                                        <img src={card1} alt="" className='img-fluid' />
+                                    </div>
+                                </div>
+                            </div>
+                        </SplideSlide>
+
+                        <SplideSlide>
+                            <img src={card5} alt="" className='img-fluid' style={{ width: "100%", height: "250px", objectFit: "cover", cursor: "pointer" }} />
+                            <div className="modal fade" id="exampleModal1" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div className="modal-dialog modal-dialog-centered">
+                                    <div className="modal-content">
+                                        <img src={card5} alt="" className='img-fluid' />
+                                    </div>
+                                </div>
+                            </div>
+                        </SplideSlide>
+
+                        <SplideSlide>
+                            <img src={card3} alt="" className='img-fluid' style={{ width: "100%", height: "250px", objectFit: "cover", cursor: "pointer" }} />
+                            <div className="modal fade" id="exampleModal2" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div className="modal-dialog modal-dialog-centered">
+                                    <div className="modal-content">
+                                        <img src={card3} alt="" className='img-fluid' />
+                                    </div>
+                                </div>
+                            </div>
+                        </SplideSlide>
+
+                        <SplideSlide>
+                            <img src={card6} alt="" className='img-fluid' style={{ width: "100%", height: "250px", objectFit: "cover", cursor: "pointer" }} />
+                            <div className="modal fade" id="exampleModal3" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div className="modal-dialog modal-dialog-centered">
+                                    <div className="modal-content">
+                                        <img src={card6} alt="" className='img-fluid' />
+                                    </div>
+                                </div>
+                            </div>
+                        </SplideSlide>
+
+                        <SplideSlide>
+                            <img src={card7} alt="" className='img-fluid' style={{ width: "100%", height: "250px", objectFit: "cover", cursor: "pointer" }} />
+                            <div className="modal fade" id="exampleModal4" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div className="modal-dialog modal-dialog-centered">
+                                    <div className="modal-content">
+                                        <img src={card7} alt="" className='img-fluid' />
+                                    </div>
+                                </div>
+                            </div>
+                        </SplideSlide>
+
+                        <SplideSlide>
+                            <img src={card5} alt="" className='img-fluid' style={{ width: "100%", height: "250px", objectFit: "cover", cursor: "pointer" }} />
+                            <div className="modal fade" id="exampleModal5" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div className="modal-dialog modal-dialog-centered">
+                                    <div className="modal-content">
+                                        <img src={card5} alt="" className='img-fluid' />
+                                    </div>
+                                </div>
+                            </div>
+                        </SplideSlide>
+                    </SplideTrack>
+                </Splide>
             </div>
         </>
     )
