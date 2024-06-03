@@ -9,7 +9,7 @@ import '@splidejs/react-splide/css';
 import { Footer, Navbar, ScrollToTop } from './components';
 
 //PAGES
-import { About, Home, Menu } from './pages';
+import { About, Awaza, Home, Menu } from './pages';
 
 function App() {
 
@@ -28,6 +28,7 @@ function App() {
                         <Route path="" element={<Home />} />
                         <Route path="menu" element={<Menu />} />
                         <Route path="biz-barada" element={<About />} />
+                        <Route path="awaza" element={<Awaza />} />
                         <Route path="*" element={<Home />} />
 
                     </Route>

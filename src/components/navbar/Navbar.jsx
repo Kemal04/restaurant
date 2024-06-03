@@ -7,9 +7,9 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-lg navbar-dark fixed-top py-3" style={{ background: "#131417" }}>
                 <div className="container">
                     <div className="w-100 text-white d-xl-flex justify-content-between d-none">
-                        <Link to="/restaurant/biz-barada" className="nav-link">BIZ BARADA</Link>
-                        <Link to="/restaurant/menu" className="nav-link">MENU</Link>
-                        <Link to="/" className="nav-link">RESERWASIÝA</Link>
+                        <Link to="/restaurant/awaza" className="nav-link">AWAZA</Link>
+                        <Link to="/" className="nav-link disabled">ASHGABAT MALL</Link>
+                        <Link to="/" className="nav-link disabled">OBIZNOY</Link>
                     </div>
                     <div className="px-5 mx-3 text-center" style={{ width: "1000px" }}>
                         <Link to="/restaurant/" className="fw-semibold text-white text-decoration-none h5 me-xl-0 me-4">Tamdyr Lezzeti</Link>
@@ -18,9 +18,9 @@ const Navbar = () => {
                         </button>
                     </div>
                     <div className="w-100 text-white d-xl-flex justify-content-between d-none">
-                        <Link to="/" className="nav-link">TÄZELIKLER</Link>
-                        <Link to="/" className="nav-link">IŞ SAGATLARYMYZ</Link>
-                        <Link to="/" className="nav-link">HABARLAŞMAK</Link>
+                        <Link to="/restaurant/biz-barada" className="nav-link">BIZ BARADA</Link>
+                        <Link to="/restaurant/menu" className="nav-link disabled">MENU</Link>
+                        <Link to="/" className="nav-link disabled">HABARLAŞMAK</Link>
                     </div>
                 </div>
             </nav >
@@ -36,22 +36,22 @@ const Navbar = () => {
                     <div className="d-flex flex-column mt-3">
                         <ul className="navbar-nav p-3">
                             <li className="nav-item mx-xl-2 mx-lg-2 mx-md-2 mx-sm-0 mx-0" style={{ fontSize: "17px" }}>
+                                <NavLink to="/restaurant/awaza" className="nav-link fw-bold">AWAZA</NavLink>
+                            </li>
+                            <li className="nav-item mx-xl-2 mx-lg-2 mx-md-2 mx-sm-0 mx-0" style={{ fontSize: "17px" }}>
+                                <NavLink to="/" className="nav-link fw-bold disabled">ASHGABAT MALL</NavLink>
+                            </li>
+                            <li className="nav-item mx-xl-2 mx-lg-2 mx-md-2 mx-sm-0 mx-0" style={{ fontSize: "17px" }}>
+                                <NavLink to="/" className="nav-link fw-bold disabled">OBIZNOY</NavLink>
+                            </li>
+                            <li className="nav-item mx-xl-2 mx-lg-2 mx-md-2 mx-sm-0 mx-0" style={{ fontSize: "17px" }}>
                                 <NavLink to="/restaurant/biz-barada" className="nav-link fw-bold">BIZ BARADA</NavLink>
                             </li>
                             <li className="nav-item mx-xl-2 mx-lg-2 mx-md-2 mx-sm-0 mx-0" style={{ fontSize: "17px" }}>
                                 <NavLink to="/restaurant/menu" className="nav-link fw-bold">MENU</NavLink>
                             </li>
                             <li className="nav-item mx-xl-2 mx-lg-2 mx-md-2 mx-sm-0 mx-0" style={{ fontSize: "17px" }}>
-                                <NavLink to="/" className="nav-link fw-bold">RESERWASIÝA</NavLink>
-                            </li>
-                            <li className="nav-item mx-xl-2 mx-lg-2 mx-md-2 mx-sm-0 mx-0" style={{ fontSize: "17px" }}>
-                                <NavLink to="/" className="nav-link fw-bold">TÄZELIKLER</NavLink>
-                            </li>
-                            <li className="nav-item mx-xl-2 mx-lg-2 mx-md-2 mx-sm-0 mx-0" style={{ fontSize: "17px" }}>
-                                <NavLink to="/" className="nav-link fw-bold">IŞ SAGATLARYMYZ</NavLink>
-                            </li>
-                            <li className="nav-item mx-xl-2 mx-lg-2 mx-md-2 mx-sm-0 mx-0" style={{ fontSize: "17px" }}>
-                                <NavLink to="/" className="nav-link fw-bold">HABARLAŞMAK</NavLink>
+                                <NavLink to="/" className="nav-link fw-bold disabled">HABARLAŞMAK</NavLink>
                             </li>
                         </ul>
                     </div>

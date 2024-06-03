@@ -121,8 +121,46 @@ body {
     width: 50%;
 }
 
+.w-xl-60 {
+    width: 60%;
+}
+
+.w-xl-75 {
+    width: 75%;
+}
+
+.ml-130 {
+    margin-left: 130px;
+}
+
+.ml-m-130 {
+    margin-left: -130px !important;
+}
+
+
 
 @media screen and (max-width: 769px) {
+
+    .ml-130 {
+        margin-left: 0;
+    }
+
+    .ml-m-130 {
+        margin-left: 0 !important;
+    }
+
+    .w-xl-50 {
+        width: 100%;
+    }
+
+    .w-xl-60 {
+        width: 100%;
+    }
+
+    .w-xl-75 {
+        width: 100%;
+    }
+
     .mb-m-50 {
         margin-bottom: 50px !important;
     }
@@ -164,13 +202,9 @@ body {
         object-fit: cover
     }
 
-    .w-xl-50 {
-        width: 100%;
-    }
-
     .about-img-tumbn {
-        width: 100%!important;
-        height: 220px!important;
+        width: 100% !important;
+        height: 220px !important;
     }
 }
 
@@ -216,4 +250,18 @@ body {
     background-size: cover !important;
     height: 350px;
     width: 100%;
+}
+
+.awaza-bg-attachment {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('./assets/awaza/banner-2.jpeg');
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    width: 100%;
+}
+
+.w-60 {
+    width: 60%;
 }
