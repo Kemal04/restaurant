@@ -129,6 +129,10 @@ body {
     width: 75%;
 }
 
+.w-xl-85 {
+    width: 85%;
+}
+
 .ml-130 {
     margin-left: 130px;
 }
@@ -158,6 +162,10 @@ body {
     }
 
     .w-xl-75 {
+        width: 100%;
+    }
+
+    .w-xl-85 {
         width: 100%;
     }
 

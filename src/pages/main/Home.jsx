@@ -118,7 +118,7 @@ const Home = () => {
             <div className='container py-5' style={{ background: "#131417" }}>
                 <div className='row justify-content-center'>
                     <div className="col-xl-5 col-10">
-                        <Link className='w-100 border rounded-circle d-flex justify-content-center align-items-center position-relative text-white' style={{ padding: "4rem" }}>
+                        <Link to='/restaurant/awaza' className='w-100 border rounded-circle d-flex justify-content-center align-items-center position-relative text-white' style={{ padding: "4rem" }}>
                             <div className='position-absolute h1' style={{ zIndex: "3" }}>MENU</div>
                             <img src={roundedText} alt="" className='img-fluid position-absolute w-100 p-3 rounded-text' style={{ zIndex: "2" }} />
                             <div className='w-100 position-relative rounded-circle overflow-hidden scale' style={{ paddingTop: "100%", zIndex: "2" }} >

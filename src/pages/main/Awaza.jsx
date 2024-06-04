@@ -32,13 +32,13 @@ const Awaza = () => {
             <div className='container py-5 my-5'>
                 <div className='row align-items-center'>
                     <div className='col-xl-6 text-center text-lg-end'>
-                        <img src={img6} alt="" className='img-fluid me-lg-4 me-0 w-75 shadow' style={{ height: "500px", objectFit: "cover", borderRadius: "100px 10px 100px 10px" }} />
+                        <img src={img6} alt="" className='img-fluid me-lg-4 me-0 w-xl-75 shadow' style={{ height: "500px", objectFit: "cover", borderRadius: "100px 10px 100px 10px" }} />
                     </div>
                     <div className='col-xl-6 text-white text-center text-lg-start mt-lg-0 mt-4'>
-                        <div className='ms-4'>
+                        <div className='ms-4 d-xl-block d-flex flex-column align-items-center'>
                             <div className='text-warning mb-3 fst-italic'>GYZGYNJAK & LEZZETLİ NAHARLAR</div>
                             <div className='h3 mb-4'>Hakyky Türk & Türkmen Aşhanasy</div>
-                            <div className='small fw-semibold mb-3 w-75'>Tamdyr tagamynda, adaty peçlerde, täze gök önümlerde we lezzetli işdäaçarlarda bişirilen etler bilen ýatdan çykmajak nahar iýip bilersiňiz. Menýumyza göz aýlanyňda, guzy tamdyrlama, manty, çorba we desertler ýaly dürli görnüşli tagamlary tapyp bilersiňiz.</div>
+                            <div className='small fw-semibold mb-3 w-xl-75'>Tamdyr tagamynda, adaty peçlerde, täze gök önümlerde we lezzetli işdäaçarlarda bişirilen etler bilen ýatdan çykmajak nahar iýip bilersiňiz. Menýumyza göz aýlanyňda, guzy tamdyrlama, manty, çorba we desertler ýaly dürli görnüşli tagamlary tapyp bilersiňiz.</div>
                             <div className='fw-semibold'>Habarlaşmak üçin <span className='text-warning'>72-64-56 , 72-64-58</span></div>
                             <Link to='/' className='btn btn-outline-light mt-5 py-2 px-4 rounded-0'>Doly Menýuny Görüň</Link>
                         </div>
@@ -53,7 +53,7 @@ const Awaza = () => {
                     </div>
                     <div className="col-xl-8" style={{ zIndex: "-2" }}>
                         <div className="shadow p-5 text-center d-flex justify-content-center rounded-xl-5 rounded-0 bg-dark">
-                            <div style={{ width: "85%" }}>
+                            <div className="w-xl-85">
                                 <div className="text-warning text-uppercase small mt-3" style={{ letterSpacing: "2px" }}>«AWAZA» Milli syýahatçylyk zolagy</div>
                                 <div className="h2 mt-2 mb-4">Tamdyr Lezzeti</div>
                                 <div>Ilkinji restoranymyzyň üstünligi bilen joşýan hyjuwyňyz indi täze meýdançada «AWAZA» Milli syýahatçylyk zolagynda. Her lokmada ussatlygymyzyň yzlary, her tabakda hyýalymyzyň tansy ... Bu täze ýer diňe bir restoran däl, bu biziň tagallalarymyzyň we hyýalymyzyň anyk beýanydyr. Müşderilerimiz üçin diňe bir tagam duralgasy däl-de, ýatdan çykmajak ýatlamalary ýeri. Bu ýer bagtyň we lezzetiň täze salgysy bolar.</div>

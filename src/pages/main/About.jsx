@@ -85,7 +85,7 @@ const About = () => {
             </div>
 
             <div className="container d-flex justify-content-center align-items-center border-bottom border-secondary pb-5">
-                <Link to='/' className="border rounded-circle h3 text-decoration-none text-white fw-semibold d-flex align-items-center justify-content-center" style={{ width: "170px", height: "170px", backgroundColor: "rgba(255, 255, 255, .06)" }}>Menu</Link>
+                <Link to='/restaurant/awaza' className="border rounded-circle h3 text-decoration-none text-white fw-semibold d-flex align-items-center justify-content-center" style={{ width: "170px", height: "170px", backgroundColor: "rgba(255, 255, 255, .06)" }}>Menu</Link>
             </div>
         </>
     )
