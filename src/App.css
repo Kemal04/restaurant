@@ -1,120 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@font-face {
+    font-family: Josefin Sans;
+    src: url('./assets/Josefin_Sans/static/JosefinSans-Medium.ttf');
+}
+
+.signature {
+    font-family: "Dancing Script", cursive;
+}
+
 body {
-    background-color: #131417 !important;
-    color: white !important;
+    font-family: 'Josefin Sans' !important;
 }
 
-/* NAV LINK  */
-.nav-link {
-    position: relative;
-    display: block;
-    cursor: pointer;
-}
-
-.nav-link:before,
-.nav-link:after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 1px;
-    top: 120%;
-    margin-top: -0.5px;
-    background: #fff;
-}
-
-.nav-link:before {
-    left: -2.5px;
-}
-
-.nav-link:after {
-    right: 2.5px;
-    background: #fff;
-    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-.nav-link:hover:before {
-    background: #fff;
+.bg-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/others/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
     width: 100%;
-    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-.nav-link:hover:after {
-    background: transparent;
+.ls-2 {
+    letter-spacing: 2px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.bg-attachmend {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/others/awaza.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
     width: 100%;
-    transition: 0s;
+    margin-top: 100px;
 }
 
-/* SCALE IMG  */
-.scale {
-    position: relative;
-    z-index: 1;
-    margin: 5px;
-    display: block;
-    overflow: hidden;
-    border-radius: 6px;
-    transition: 0.5s;
+.about-img-1 {
+    height: 550px;
+    width: 520px;
+    object-fit: cover;
 }
 
-.scale img {
-    transition-duration: 500ms;
-    border-radius: 6px;
-}
-
-.scale:hover img,
-.scale:focus img {
-    transform: scale(1.15);
-}
-
-/* PROGRESS BAR  */
-.about-home-progress {
-    z-index: -2;
-    width: 1px;
-    height: 145vh;
-    background-color: #6a6a6a;
+.about-img-2 {
     position: absolute;
-}
-
-.about-home-progress-bar {
-    z-index: -1;
-    width: 1px;
-    height: 50vh;
-    background-color: #dcdcdc;
-    position: fixed;
-    top: 0;
-    bottom: 50vh;
-}
-
-.star-icon {
-    height: 1.5rem;
-    background-color: #131417;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    position: sticky;
-    top: 50vh;
-    box-shadow: 0 0 0 1.5rem #131417;
-}
-
-/* ROUNDED TEXT WITH IMAGE  */
-.rounded-text {
-    animation: rotate 25s linear infinite;
-    transform-origin: 250px 250px 250px 250px;
-}
-
-@keyframes rotate {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.mb-m-50 {
-    margin-bottom: -50px !important;
-}
-
-.chef-img {
-    border-radius: 50% 50% 0 0;
-    height: 650px;
-    width: 500px;
-    object-fit: cover
+    width: 450px;
+    height: 280px;
+    object-fit: cover;
+    bottom: -10%;
+    left: 3%;
+    border: 15px solid white;
 }
 
 .w-xl-50 {
@@ -133,25 +72,11 @@ body {
     width: 85%;
 }
 
-.ml-130 {
-    margin-left: 130px;
+.w-1000 {
+    width: 1000px;
 }
-
-.ml-m-130 {
-    margin-left: -130px !important;
-}
-
-
 
 @media screen and (max-width: 769px) {
-
-    .ml-130 {
-        margin-left: 0;
-    }
-
-    .ml-m-130 {
-        margin-left: 0 !important;
-    }
 
     .w-xl-50 {
         width: 100%;
@@ -169,107 +94,22 @@ body {
         width: 100%;
     }
 
-    .mb-m-50 {
-        margin-bottom: 50px !important;
-    }
-
-    .about-home-progress {
-        z-index: -2;
-        width: 1px;
-        height: 0%;
-        background-color: #6a6a6a;
-        left: 4%;
-        position: absolute;
-    }
-
-    .about-home-progress-bar {
-        z-index: -1;
-        width: 1px;
-        height: 0vh;
-        background-color: #dcdcdc;
-        position: fixed;
-        top: 0;
-        bottom: 50vh;
-    }
-
-    .star-icon {
-        height: 1.5rem;
-        background-color: #131417;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        position: sticky;
-        top: 50vh;
-        box-shadow: 0 0 0 .5rem #131417;
-    }
-
-    .chef-img {
-        border-radius: 50% 50% 0 0;
-        height: auto;
+    .w-1000 {
         width: 100%;
-        object-fit: cover
     }
 
-    .about-img-tumbn {
+    .about-img-1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-img-2 {
+        position: relative;
         width: 100% !important;
-        height: 220px !important;
+        height: auto !important;
+        border: none;
+        left: 0;
+        border: 15px solid white;
     }
-}
 
-/* ABOUT SECTION  */
-.about-bg-attachment {
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('./assets/about/banner.jpg');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 70vh;
-    width: 100%;
-}
-
-.fs-18 {
-    font-size: 18px;
-}
-
-.horizontal-line {
-    width: 100%;
-    height: 1px;
-    background-color: #6a6a6a;
-}
-
-.border-dark-light {
-    border-color: #6a6a6a !important;
-}
-
-/* Menu SECTION  */
-.menu-bg-attachment {
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('./assets/menu/banner.jpg');
-    background-position: 0 60%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 70vh;
-    width: 100%;
-}
-
-.menu-card {
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    height: 350px;
-    width: 100%;
-}
-
-.awaza-bg-attachment {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('./assets/awaza/banner-2.jpeg');
-    background-position: 50% 20%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 70vh;
-    width: 100%;
-}
-
-.w-60 {
-    width: 60%;
 }

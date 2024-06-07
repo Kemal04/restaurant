@@ -9,9 +9,10 @@ import '@splidejs/react-splide/css';
 import { Footer, Navbar, ScrollToTop } from './components';
 
 //PAGES
-import { About, Awaza, Home, Menu } from './pages';
+import Home from './pages/Home';
 
 function App() {
+    
 
     useEffect(function () {
         Aos.init({ duration: 1000 });
@@ -26,9 +27,6 @@ function App() {
                     <Route path="/restaurant" element={<HomeLayout />}>
 
                         <Route path="" element={<Home />} />
-                        <Route path="menu" element={<Menu />} />
-                        <Route path="biz-barada" element={<About />} />
-                        <Route path="awaza" element={<Awaza />} />
                         <Route path="*" element={<Home />} />
 
                     </Route>
