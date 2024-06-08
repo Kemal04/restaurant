@@ -82,6 +82,10 @@ body {
     width: 85%;
 }
 
+.w-xl-90 {
+    width: 90%;
+}
+
 .w-1000 {
     width: 1000px;
 }
@@ -101,6 +105,10 @@ body {
     }
 
     .w-xl-85 {
+        width: 100%;
+    }
+
+    .w-xl-90 {
         width: 100%;
     }
 

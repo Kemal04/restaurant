@@ -12,7 +12,6 @@ import { Footer, Navbar, ScrollToTop } from './components';
 import Home from './pages/Home';
 
 function App() {
-    
 
     useEffect(function () {
         Aos.init({ duration: 1000 });

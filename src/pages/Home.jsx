@@ -1,18 +1,11 @@
 import { useState } from "react";
 import card1 from "../assets/tamdyr-lezzeti/6.jpeg";
 import card2 from "../assets/tamdyr-lezzeti/hotel.png";
-import saladImg from "../assets/menu/salat.jpg";
-import corbaImg from "../assets/menu/corba.jpg";
-import pizzaImg from "../assets/menu/pizza.jpg";
-import mangalImg from "../assets/menu/mangal.jpg";
-import mangalWhiteIcon from "../assets/icons/mangalWhite.svg";
-import saladWhiteIcon from "../assets/icons/saladWhite.svg";
-import corbaWhiteIcon from "../assets/icons/corbaWhite.svg";
-import burgerWhiteIcon from "../assets/icons/burgerWhite.svg";
+import menuImg from "../assets/menu/menu-banner.jpg";
 
 const Home = () => {
 
-    const [basicActive, setBasicActive] = useState('tab4');
+    const [basicActive, setBasicActive] = useState('tab1');
 
     const handleBasicClick = (value) => {
         if (value === basicActive) {
@@ -59,303 +52,758 @@ const Home = () => {
             <div className='container text-center'>
                 <ul className="nav nav-pills mb-3 justify-content-center mt-4" id="pills-tab" role="tablist">
                     <li className="nav-item" role="presentation">
-                        <div className={`btn btn-warning d-flex flex-column align-items-center mx-xl-4 mx-1 mb-3 ${basicActive === 'tab4' && 'active'}`} style={{ width: "150px", height: "120px", cursor: "pointer" }} onClick={() => handleBasicClick('tab4')} data-bs-toggle="pill" type="button" role="tab" aria-selected="true">
-                            <img src={mangalWhiteIcon} alt="" style={{ width: "100px", height: "80px" }} />
-                            <div className='mt-2 text-white'>Mangal</div>
+                        <div className={`btn btn-outline-warning d-flex flex-column align-items-center mx-xl-1 mx-1 mb-3 ${basicActive === 'tab1' && 'active'}`} onClick={() => handleBasicClick('tab1')} data-bs-toggle="pill" type="button" role="tab" aria-selected="true">
+                            <div className='mt-2'>Çorba</div>
                         </div>
                     </li>
                     <li className="nav-item" role="presentation">
-                        <div className={`btn btn-warning d-flex flex-column align-items-center mx-xl-4 mx-1 mb-3 ${basicActive === 'tab1' && 'active'}`} style={{ width: "150px", height: "120px", cursor: "pointer" }} onClick={() => handleBasicClick('tab1')} data-bs-toggle="pill" type="button" role="tab" aria-selected="false">
-                            <img src={saladWhiteIcon} alt="" style={{ width: "100px", height: "80px" }} />
-                            <div className='mt-2 text-white'>Işdä açarlar</div>
+                        <div className={`btn btn-outline-warning d-flex flex-column align-items-center mx-xl-1 mx-1 mb-3 ${basicActive === 'tab2' && 'active'}`} onClick={() => handleBasicClick('tab2')} data-bs-toggle="pill" type="button" role="tab" aria-selected="false">
+                            <div className='mt-2'>Ertirlik</div>
                         </div>
                     </li>
                     <li className="nav-item" role="presentation">
-                        <div className={`btn btn-warning d-flex flex-column align-items-center mx-xl-4 mx-1 mb-3 ${basicActive === 'tab3' && 'active'}`} style={{ width: "150px", height: "120px", cursor: "pointer" }} onClick={() => handleBasicClick('tab3')} data-bs-toggle="pill" type="button" role="tab" aria-selected="false">
-                            <img src={corbaWhiteIcon} alt="" style={{ width: "100px", height: "80px" }} />
-                            <div className='mt-2 text-white'>Çorba</div>
+                        <div className={`btn btn-outline-warning d-flex flex-column align-items-center mx-xl-1 mx-1 mb-3 ${basicActive === 'tab3' && 'active'}`} onClick={() => handleBasicClick('tab3')} data-bs-toggle="pill" type="button" role="tab" aria-selected="false">
+                            <div className='mt-2'>Mangal</div>
                         </div>
                     </li>
                     <li className="nav-item" role="presentation">
-                        <div className={`btn btn-warning d-flex flex-column align-items-center mx-xl-4 mx-1 mb-3 ${basicActive === 'tab2' && 'active'}`} style={{ width: "150px", height: "120px", cursor: "pointer" }} onClick={() => handleBasicClick('tab2')} data-bs-toggle="pill" type="button" role="tab" aria-selected="false">
-                            <img src={burgerWhiteIcon} alt="" style={{ width: "100px", height: "80px" }} />
-                            <div className='mt-2 text-white'>Pizza & burger</div>
+                        <div className={`btn btn-outline-warning d-flex flex-column align-items-center mx-xl-1 mx-1 mb-3 ${basicActive === 'tab4' && 'active'}`} onClick={() => handleBasicClick('tab4')} data-bs-toggle="pill" type="button" role="tab" aria-selected="false">
+                            <div className='mt-2'>Işdä açarlar</div>
+                        </div>
+                    </li>
+                    <li className="nav-item" role="presentation">
+                        <div className={`btn btn-outline-warning d-flex flex-column align-items-center mx-xl-1 mx-1 mb-3 ${basicActive === 'tab5' && 'active'}`} onClick={() => handleBasicClick('tab5')} data-bs-toggle="pill" type="button" role="tab" aria-selected="false">
+                            <div className='mt-2'>Garnirler</div>
+                        </div>
+                    </li>
+                    <li className="nav-item" role="presentation">
+                        <div className={`btn btn-outline-warning d-flex flex-column align-items-center mx-xl-1 mx-1 mb-3 ${basicActive === 'tab6' && 'active'}`} onClick={() => handleBasicClick('tab6')} data-bs-toggle="pill" type="button" role="tab" aria-selected="false">
+                            <div className='mt-2'>Piwa üçin garbanmalar</div>
+                        </div>
+                    </li>
+                    <li className="nav-item" role="presentation">
+                        <div className={`btn btn-outline-warning d-flex flex-column align-items-center mx-xl-1 mx-1 mb-3 ${basicActive === 'tab7' && 'active'}`} onClick={() => handleBasicClick('tab7')} data-bs-toggle="pill" type="button" role="tab" aria-selected="false">
+                            <div className='mt-2'>Garbanmalar</div>
+                        </div>
+                    </li>
+                    <li className="nav-item" role="presentation">
+                        <div className={`btn btn-outline-warning d-flex flex-column align-items-center mx-xl-1 mx-1 mb-3 ${basicActive === 'tab8' && 'active'}`} onClick={() => handleBasicClick('tab8')} data-bs-toggle="pill" type="button" role="tab" aria-selected="false">
+                            <div className='mt-2'>Steýklar "josper"</div>
+                        </div>
+                    </li>
+                    <li className="nav-item" role="presentation">
+                        <div className={`btn btn-outline-warning d-flex flex-column align-items-center mx-xl-1 mx-1 mb-3 ${basicActive === 'tab9' && 'active'}`} onClick={() => handleBasicClick('tab9')} data-bs-toggle="pill" type="button" role="tab" aria-selected="false">
+                            <div className='mt-2'>Gyzgyn naharlar</div>
+                        </div>
+                    </li>
+                    <li className="nav-item" role="presentation">
+                        <div className={`btn btn-outline-warning d-flex flex-column align-items-center mx-xl-1 mx-1 mb-3 ${basicActive === 'tab10' && 'active'}`} onClick={() => handleBasicClick('tab10')} data-bs-toggle="pill" type="button" role="tab" aria-selected="false">
+                            <div className='mt-2'>Pide pizza burger</div>
                         </div>
                     </li>
                 </ul>
             </div>
 
             <div className="container">
-                <div className="tab-content pb-5" id="pills-tabContent">
-                    <div className={`tab-pane fade ${basicActive === 'tab1' && 'show active'}`} role="tabpanel">
-                        <div className='row mt-5 align-items-center'>
-                            <div className='col-xl-6 col-12 text-end'>
-                                <img src={saladImg} alt="" className='img-fluid w-xl-75 mb-xl-0 mb-5' style={{ height: "640px", objectFit: "cover" }} />
-                            </div>
-                            <div className='col-xl-6 col-12 d-flex flex-column align-items-start'>
-                                <div className="w-xl-60">
-
-                                    <div className='lh-sm mb-5'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Çopan Salat</div>
-                                            <div className='ms-5 fw-semibold text-warning'>45 TMT</div>
-                                        </div>
-                                    </div>
-
-                                    <div className='lh-sm mb-5'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Grek Salat</div>
-                                            <div className='ms-5 fw-semibold text-warning'>55 TMT</div>
-                                        </div>
-                                    </div>
-
-                                    <div className='lh-sm mb-5'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Gyzgyn Etli Salat</div>
-                                            <div className='ms-5 fw-semibold text-warning'>87 TMT</div>
-                                        </div>
-                                    </div>
-
-                                    <div className='lh-sm mb-5'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Gyzgyn Towuk Salat</div>
-                                            <div className='ms-5 fw-semibold text-warning'>80 TMT</div>
-                                        </div>
-                                    </div>
-
-                                    <div className='lh-sm mb-5'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Taýskiy Salat</div>
-                                            <div className='ms-5 fw-semibold text-warning'>55 TMT</div>
-                                        </div>
-                                    </div>
-
-                                    <div className='lh-sm mb-5'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Sezar Lezzeti</div>
-                                            <div className='ms-5 fw-semibold text-warning'>65 TMT</div>
-                                        </div>
-                                    </div>
-
-                                    <div className='lh-sm mb-5'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Süzme Çal Grafin</div>
-                                            <div className='ms-5 fw-semibold text-warning'>50 TMT</div>
-                                        </div>
-                                    </div>
-
-                                    <div className='lh-sm'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Gök Önüm Garyndysy</div>
-                                            <div className='ms-5 fw-semibold text-warning'>65 TMT</div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
+                <div className="row">
+                    <div className="col-xl-4 text-end">
+                        <img src={menuImg} alt="" className='img-fluid mb-xl-0 mb-5 shadow rounded-2 w-xl-90' />
                     </div>
-                    <div className={`tab-pane fade ${basicActive === 'tab2' && 'show active'}`} role="tabpanel">
-                        <div className='row mt-5 align-items-center'>
-                            <div className='col-xl-6 col-12 d-flex flex-column align-items-start order-1'>
-                                <div className="w-xl-60">
-
-                                    <div className='lh-sm mb-5'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Pizza Assorti</div>
-                                            <div className='ms-5 fw-semibold text-warning'>90 TMT</div>
-                                        </div>
-                                    </div>
-
-                                    <div className='lh-sm mb-5'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Pizza Towukly</div>
-                                            <div className='ms-5 fw-semibold text-warning'>80 TMT</div>
-                                        </div>
-                                    </div>
-
-                                    <div className='lh-sm mb-5'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Pizza Pepperoni</div>
-                                            <div className='ms-5 fw-semibold text-warning'>70 TMT</div>
-                                        </div>
-                                    </div>
-
-                                    <div className='lh-sm mb-5'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Pizza Margarita</div>
-                                            <div className='ms-5 fw-semibold text-warning'>65 TMT</div>
-                                        </div>
-                                    </div>
-
-                                    <div className='lh-sm mb-5'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Pide Etli</div>
-                                            <div className='ms-5 fw-semibold text-warning'>70 TMT</div>
-                                        </div>
-                                    </div>
-
-                                    <div className='lh-sm mb-5'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Lahmajun</div>
-                                            <div className='ms-5 fw-semibold text-warning'>30 TMT</div>
-                                        </div>
-                                    </div>
-
-                                    <div className='lh-sm mb-5'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Çörek Sebetde</div>
-                                            <div className='ms-5 fw-semibold text-warning'>15 TMT</div>
-                                        </div>
-                                    </div>
-
-                                    <div className='lh-sm'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Burger</div>
-                                            <div className='ms-5 fw-semibold text-warning'>55 TMT</div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div className='col-xl-6 col-12 order-0 text-end'>
-                                <img src={pizzaImg} alt="" className='img-fluid w-xl-75 mb-xl-0 mb-5' style={{ height: "640px", objectFit: "cover" }} />
-                            </div>
-                        </div>
-                    </div>
-                    <div className={`tab-pane fade ${basicActive === 'tab3' && 'show active'}`} role="tabpanel">
-                        <div className='row mt-5 align-items-center'>
-                            <div className='col-xl-6 col-12 text-end'>
-                                <img src={corbaImg} alt="" className='img-fluid w-xl-75 mb-xl-0 mb-5' style={{ height: "640px", objectFit: "cover" }} />
-                            </div>
-                            <div className='col-xl-6 col-12 d-flex flex-column align-items-start'>
-                                <div className="w-xl-60">
-
-                                    <div className='lh-sm mb-4'>
+                    <div className="col-xl-8">
+                        <div className="tab-content pb-5" id="pills-tabContent">
+                            <div className={`tab-pane fade ${basicActive === 'tab1' && 'show active'}`} role="tabpanel">
+                                <div className='row'>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
                                         <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
                                             <div className='me-5'>Un Aş</div>
                                             <div className='ms-5 fw-semibold text-warning'>45 TMT</div>
                                         </div>
                                     </div>
 
-                                    <div className='lh-sm mb-4'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Jüjeli unaş</div>
-                                            <div className='ms-5 fw-semibold text-warning'>50 TMT</div>
-                                        </div>
-                                    </div>
-
-                                    <div className='lh-sm mb-4'>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
                                         <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
                                             <div className='me-5'>Ezogelin</div>
                                             <div className='ms-5 fw-semibold text-warning'>30 TMT</div>
                                         </div>
                                     </div>
 
-                                    <div className='lh-sm mb-4'>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Jüjeli unaş</div>
+                                            <div className='ms-5 fw-semibold text-warning'>50 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Jüjeli çorba</div>
+                                            <div className='ms-5 fw-semibold text-warning'>50 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
                                         <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
                                             <div className='me-5'>Merjimek </div>
                                             <div className='ms-5 fw-semibold text-warning'>25 TMT</div>
                                         </div>
                                     </div>
 
-                                    <div className='lh-sm mb-4'>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
                                         <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Sote Etli</div>
-                                            <div className='ms-5 fw-semibold text-warning'>75 TMT</div>
+                                            <div className='me-5'>Towuk krem çorbasy </div>
+                                            <div className='ms-5 fw-semibold text-warning'>40 TMT</div>
                                         </div>
                                     </div>
-
-                                    <div className='lh-sm mb-4'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Towuk Sote</div>
-                                            <div className='ms-5 fw-semibold text-warning'>73 TMT</div>
-                                        </div>
-                                    </div>
-
-                                    <div className='lh-sm mb-4'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Jüje Mesgede</div>
-                                            <div className='ms-5 fw-semibold text-warning'>80 TMT</div>
-                                        </div>
-                                    </div>
-
-                                    <div className='lh-sm mb-4'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Jüje Batyrma</div>
-                                            <div className='ms-5 fw-semibold text-warning'>82 TMT</div>
-                                        </div>
-                                    </div>
-
-                                    <div className='lh-sm mb-4'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Kakmaç Mesgede</div>
-                                            <div className='ms-5 fw-semibold text-warning'>80 TMT</div>
-                                        </div>
-                                    </div>
-
-                                    <div className='lh-sm'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Kakmaç Batyrma</div>
-                                            <div className='ms-5 fw-semibold text-warning'>83 TMT</div>
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div className={`tab-pane fade ${basicActive === 'tab4' && 'show active'}`} role="tabpanel">
-                        <div className='row mt-5 align-items-center'>
-                            <div className='col-xl-6 col-12 d-flex flex-column align-items-start order-1'>
-                                <div className="w-xl-60">
+                            <div className={`tab-pane fade ${basicActive === 'tab2' && 'show active'}`} role="tabpanel">
+                                <div className='row'>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Gowurdakly ýumurtga</div>
+                                            <div className='ms-5 fw-semibold text-warning'>55 TMT</div>
+                                        </div>
+                                    </div>
 
-                                    <div className='lh-sm mb-5'>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Grenki</div>
+                                            <div className='ms-5 fw-semibold text-warning'>45 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Kömelekli we syrly omlet</div>
+                                            <div className='ms-5 fw-semibold text-warning'>45 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Menemen syr bilen</div>
+                                            <div className='ms-5 fw-semibold text-warning'>45 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Omlet klassik</div>
+                                            <div className='ms-5 fw-semibold text-warning'>30 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Süýtli tüwi</div>
+                                            <div className='ms-5 fw-semibold text-warning'>36 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Tamdyr lezzeti ertirlik</div>
+                                            <div className='ms-5 fw-semibold text-warning'>145 TMT</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={`tab-pane fade ${basicActive === 'tab3' && 'show active'}`} role="tabpanel">
+                                <div className='row'>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Bagyr iç ýagda</div>
+                                            <div className='ms-5 fw-semibold text-warning'>40 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Çörek mangalda</div>
+                                            <div className='ms-5 fw-semibold text-warning'>25 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Gök önümler mangalda</div>
+                                            <div className='ms-5 fw-semibold text-warning'>50 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
                                         <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
                                             <div className='me-5'>Göle Lüle Kebap</div>
                                             <div className='ms-5 fw-semibold text-warning'>45 TMT</div>
                                         </div>
                                     </div>
 
-                                    <div className='lh-sm mb-5'>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
                                         <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
                                             <div className='me-5'>Goýun Gapyrga</div>
-                                            <div className='ms-5 fw-semibold text-warning'>55 TMT</div>
+                                            <div className='ms-5 fw-semibold text-warning'>60 TMT</div>
                                         </div>
                                     </div>
 
-                                    <div className='lh-sm mb-5'>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
                                         <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
                                             <div className='me-5'>Goýun Kebap</div>
-                                            <div className='ms-5 fw-semibold text-warning'>45 TMT</div>
-                                        </div>
-                                    </div>
-
-                                    <div className='lh-sm mb-5'>
-                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
-                                            <div className='me-5'>Towuk Şaşlyk</div>
                                             <div className='ms-5 fw-semibold text-warning'>50 TMT</div>
                                         </div>
                                     </div>
 
-                                    <div className='lh-sm mb-5'>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Kartoşka</div>
+                                            <div className='ms-5 fw-semibold text-warning'>10 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Kefal balyk mangalda</div>
+                                            <div className='ms-5 fw-semibold text-warning'>100 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Kömelek mangalda</div>
+                                            <div className='ms-5 fw-semibold text-warning'>65 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Kotlet göle eti mangalda</div>
+                                            <div className='ms-5 fw-semibold text-warning'>60 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Kotlet towuk etinden</div>
+                                            <div className='ms-5 fw-semibold text-warning'>60 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Ostrina na mangale</div>
+                                            <div className='ms-5 fw-semibold text-warning'>350 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Perzola mangalda</div>
+                                            <div className='ms-5 fw-semibold text-warning'>85 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Pomidor</div>
+                                            <div className='ms-5 fw-semibold text-warning'>10 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Tabaka</div>
+                                            <div className='ms-5 fw-semibold text-warning'>150 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Towuk Ganat</div>
+                                            <div className='ms-5 fw-semibold text-warning'>75 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
                                         <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
                                             <div className='me-5'>Towuk Lüle</div>
                                             <div className='ms-5 fw-semibold text-warning'>45 TMT</div>
                                         </div>
                                     </div>
 
-                                    <div className='lh-sm'>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Towuk Şaşlyk</div>
+                                            <div className='ms-5 fw-semibold text-warning'>50 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm'>
                                         <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
                                             <div className='me-5'>Tunçede Çay</div>
                                             <div className='ms-5 fw-semibold text-warning'>50 TMT</div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
-                            <div className='col-xl-6 col-12 order-0 text-end'>
-                                <img src={mangalImg} alt="" className='img-fluid w-xl-75 mb-xl-0 mb-5' style={{ height: "640px", objectFit: "cover" }} />
+                            <div className={`tab-pane fade ${basicActive === 'tab4' && 'show active'}`} role="tabpanel">
+                                <div className='row'>
+                                    <div className='col-xl-6 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Akroşka</div>
+                                            <div className='ms-5 fw-semibold text-warning'>40 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Ananasowy Salat</div>
+                                            <div className='ms-5 fw-semibold text-warning'>65 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Çopan Salat</div>
+                                            <div className='ms-5 fw-semibold text-warning'>45 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Dymok</div>
+                                            <div className='ms-5 fw-semibold text-warning'>50 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Gowurdagi salady</div>
+                                            <div className='ms-5 fw-semibold text-warning'>45 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Göle etinden ýyly salat</div>
+                                            <div className='ms-5 fw-semibold text-warning'>95 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Gowurlan badamjanly salat</div>
+                                            <div className='ms-5 fw-semibold text-warning'>95 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Grek Salady</div>
+                                            <div className='ms-5 fw-semibold text-warning'>55 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Kakadylan pomidorly</div>
+                                            <div className='ms-5 fw-semibold text-warning'>60 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Nar Salady</div>
+                                            <div className='ms-5 fw-semibold text-warning'>50 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Taýskiy</div>
+                                            <div className='ms-5 fw-semibold text-warning'>55 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Sezar Lezzeti</div>
+                                            <div className='ms-5 fw-semibold text-warning'>65 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Süzme Çal</div>
+                                            <div className='ms-5 fw-semibold text-warning'>50 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Towuk we ananasly salat</div>
+                                            <div className='ms-5 fw-semibold text-warning'>85 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Towukly ýyly salat</div>
+                                            <div className='ms-5 fw-semibold text-warning'>80 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 lh-sm'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Ýaz Salady</div>
+                                            <div className='ms-5 fw-semibold text-warning'>55 TMT</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={`tab-pane fade ${basicActive === 'tab5' && 'show active'}`} role="tabpanel">
+                                <div className='row'>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Fri</div>
+                                            <div className='ms-5 fw-semibold text-warning'>30 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Kartoşka öý usulda</div>
+                                            <div className='ms-5 fw-semibold text-warning'>35 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Naggetsy</div>
+                                            <div className='ms-5 fw-semibold text-warning'>60 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Püre</div>
+                                            <div className='ms-5 fw-semibold text-warning'>30 TMT</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Ris</div>
+                                            <div className='ms-5 fw-semibold text-warning'>30 TMT</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={`tab-pane fade ${basicActive === 'tab6' && 'show active'}`} role="tabpanel">
+                                <div className='row'>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Arahis</div>
+                                            <div className='ms-5 fw-semibold text-warning'>25 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Basturma</div>
+                                            <div className='ms-5 fw-semibold text-warning'>50 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Çipsi</div>
+                                            <div className='ms-5 fw-semibold text-warning'>25 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Gurt</div>
+                                            <div className='ms-5 fw-semibold text-warning'>20 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Peýnir kosiçka</div>
+                                            <div className='ms-5 fw-semibold text-warning'>50 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Pisse</div>
+                                            <div className='ms-5 fw-semibold text-warning'>40 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Piwo seti</div>
+                                            <div className='ms-5 fw-semibold text-warning'>250 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Sarymsakly grenki</div>
+                                            <div className='ms-5 fw-semibold text-warning'>45 TMT</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={`tab-pane fade ${basicActive === 'tab7' && 'show active'}`} role="tabpanel">
+                                <div className='row'>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Fruktowy assorti</div>
+                                            <div className='ms-5 fw-semibold text-warning'>140 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Gök önüm garyndysy</div>
+                                            <div className='ms-5 fw-semibold text-warning'>65 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Kapçonoe assorti</div>
+                                            <div className='ms-5 fw-semibold text-warning'>180 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Limon zeytunlar</div>
+                                            <div className='ms-5 fw-semibold text-warning'>45 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Peynir we et assorti</div>
+                                            <div className='ms-5 fw-semibold text-warning'>300 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Salýonny assorti</div>
+                                            <div className='ms-5 fw-semibold text-warning'>85 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Sarymsakly süzma</div>
+                                            <div className='ms-5 fw-semibold text-warning'>35 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Selýodka bilen ýeralma</div>
+                                            <div className='ms-5 fw-semibold text-warning'>110 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Vodka üçin garbanma</div>
+                                            <div className='ms-5 fw-semibold text-warning'>150 TMT</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={`tab-pane fade ${basicActive === 'tab8' && 'show active'}`} role="tabpanel">
+                                <div className='row'>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Bon steak</div>
+                                            <div className='ms-5 fw-semibold text-warning'>220 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Dallas steak</div>
+                                            <div className='ms-5 fw-semibold text-warning'>195 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Gassap kotlet</div>
+                                            <div className='ms-5 fw-semibold text-warning'>95 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Goýun t-bone</div>
+                                            <div className='ms-5 fw-semibold text-warning'>195 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Goýunyň boýuny</div>
+                                            <div className='ms-5 fw-semibold text-warning'>350 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Goýunyň goly</div>
+                                            <div className='ms-5 fw-semibold text-warning'>450 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Guzy filesi</div>
+                                            <div className='ms-5 fw-semibold text-warning'>115 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Guzy gapyrga</div>
+                                            <div className='ms-5 fw-semibold text-warning'>95 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Guzy gapyrgalary</div>
+                                            <div className='ms-5 fw-semibold text-warning'>320 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Nýu Ýork steýk</div>
+                                            <div className='ms-5 fw-semibold text-warning'>190 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Peýnirli kotletlar</div>
+                                            <div className='ms-5 fw-semibold text-warning'>100 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Ribaý steýk</div>
+                                            <div className='ms-5 fw-semibold text-warning'>220 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Satabrian steýk</div>
+                                            <div className='ms-5 fw-semibold text-warning'>280 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>T-bone steýk</div>
+                                            <div className='ms-5 fw-semibold text-warning'>180 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Tehas göle gapyrgasy</div>
+                                            <div className='ms-5 fw-semibold text-warning'>140 TMT</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={`tab-pane fade ${basicActive === 'tab9' && 'show active'}`} role="tabpanel">
+                                <div className='row'>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Etli sote</div>
+                                            <div className='ms-5 fw-semibold text-warning'>95 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Jüýje batyrma</div>
+                                            <div className='ms-5 fw-semibold text-warning'>82 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Jüýje mesgede</div>
+                                            <div className='ms-5 fw-semibold text-warning'>80 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Kakmaç batyrma</div>
+                                            <div className='ms-5 fw-semibold text-warning'>97 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Kakmaç mesgede</div>
+                                            <div className='ms-5 fw-semibold text-warning'>97 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Osetrina gowurlan</div>
+                                            <div className='ms-5 fw-semibold text-warning'>350 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Towuk sote</div>
+                                            <div className='ms-5 fw-semibold text-warning'>80 TMT</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={`tab-pane fade ${basicActive === 'tab10' && 'show active'}`} role="tabpanel">
+                                <div className='row'>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Burger</div>
+                                            <div className='ms-5 fw-semibold text-warning'>55 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Lahmajun</div>
+                                            <div className='ms-5 fw-semibold text-warning'>30 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Pide assorti</div>
+                                            <div className='ms-5 fw-semibold text-warning'>70 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Pide etli</div>
+                                            <div className='ms-5 fw-semibold text-warning'>70 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Pizza assorti</div>
+                                            <div className='ms-5 fw-semibold text-warning'>90 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Pizza margarita</div>
+                                            <div className='ms-5 fw-semibold text-warning'>65 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Pizza pepperoni</div>
+                                            <div className='ms-5 fw-semibold text-warning'>70 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Pizza towukly</div>
+                                            <div className='ms-5 fw-semibold text-warning'>80 TMT</div>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-6 col-12 lh-sm mb-4'>
+                                        <div className='d-flex align-items-center justify-content-between border-bottom border-secondary py-2'>
+                                            <div className='me-5'>Sebet çörek</div>
+                                            <div className='ms-5 fw-semibold text-warning'>15 TMT</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
