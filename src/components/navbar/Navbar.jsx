@@ -62,13 +62,13 @@ const Navbar = () => {
                 {/* BANNER SECTION  */}
                 <div id="home" className="container text-white my-auto text-center">
                     <div className="d-flex align-items-center justify-content-center">
-                        <div className="text-uppercase me-4 small">bagtyýar</div>
+                        <div data-aos="fade-left" className="text-uppercase me-4 small">bagtyýar</div>
                         <div>
                             <div className="display-1 fw-bold" style={{ letterSpacing: "5px" }}>Tamdyr</div>
                             <div className="display-3 fw-semibold">Lezzeti</div>
-                            <img src={restImg} alt="" className="mt-4" style={{ width: "131px" }} />
+                            <img data-aos="fade-down" src={restImg} alt="" className="mt-4" style={{ width: "131px" }} />
                         </div>
-                        <div className="text-uppercase ms-4 small">hotel</div>
+                        <div data-aos="fade-right" className="text-uppercase ms-4 small">hotel</div>
                     </div>
                 </div>
 
@@ -85,16 +85,16 @@ const Navbar = () => {
                     <div className="d-flex flex-column mt-3">
                         <ul className="navbar-nav p-3">
                             <li className="nav-item mx-xl-2 mx-lg-2 mx-md-2 mx-sm-0 mx-0" style={{ fontSize: "17px" }}>
-                                <NavLink to="#home" className="nav-link fw-bold text-uppercase">Baş sahypa</NavLink>
+                                <a href="#home" className="nav-link fw-bold text-uppercase">Baş sahypa</a>
                             </li>
                             <li className="nav-item mx-xl-2 mx-lg-2 mx-md-2 mx-sm-0 mx-0" style={{ fontSize: "17px" }}>
-                                <NavLink to="#about" className="nav-link fw-bold text-uppercase">Biz barada</NavLink>
+                                <a href="#about" className="nav-link fw-bold text-uppercase">Biz barada</a>
                             </li>
                             <li className="nav-item mx-xl-2 mx-lg-2 mx-md-2 mx-sm-0 mx-0" style={{ fontSize: "17px" }}>
-                                <NavLink to="#menu" className="nav-link fw-bold text-uppercase">Menýu</NavLink>
+                                <a href="#menu" className="nav-link fw-bold text-uppercase">Menýu</a>
                             </li>
                             <li className="nav-item mx-xl-2 mx-lg-2 mx-md-2 mx-sm-0 mx-0" style={{ fontSize: "17px" }}>
-                                <NavLink to="#contact" className="nav-link fw-bold text-uppercase">Habarlaşmak</NavLink>
+                                <a href="#contact" className="nav-link fw-bold text-uppercase">Habarlaşmak</a>
                             </li>
                         </ul>
                     </div>
