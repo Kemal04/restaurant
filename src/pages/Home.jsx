@@ -24,17 +24,17 @@ const Home = () => {
 
     return (
         <>
-            <div className="container mt-5 pt-5 ">
+            <div className="container mt-5 pt-5 " id="about">
                 <div className="row align-items-center">
                     <div className="col-xl-6 position-relative text-center">
                         <img src={card1} alt="" className="about-img-1" />
                         <img src={card2} alt="" className="about-img-2" />
                     </div>
                     <div className="col-xl-6 mt-5 mt-xl-0">
-                        <div className="ls-2 fs-12">FRESH FOOD EVERY DAY</div>
-                        <div className="h1 mt-3 mb-4">The Best Sea Food City Restaurant</div>
+                        <div className="ls-2 fs-12">Biz Barada</div>
+                        <div className="h1 mt-3 mb-4">Hakyky Türk & <br /> Türkmen Aşhanasy</div>
                         <div className="ls-1 lh-lg mb-5">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et metus augue. Mauris ut libero eget erat scelerisque vehicula. Phasellus nec blandit metus. Nulla quis molestie risus. Nunc non auctor dui. In consequat augue eu eros luctus cursus. Nullam commodo nunc vel purus rhoncus ultrices. Suspendisse vitae neque.
+                            Tamdyr tagamynda, adaty peçlerde, täze gök önümlerde we lezzetli işdäaçarlarda bişirilen etler bilen ýatdan çykmajak nahar iýip bilersiňiz. Menýumyza göz aýlanyňda, guzy tamdyrlama, manty, çorba we desertler ýaly dürli görnüşli tagamlary tapyp bilersiňiz.
                         </div>
                         <div className="signature text-warning fw-bold h1 ms-4">Tamdyr</div>
                         <div className="signature text-warning fw-bold h1 ms-5 ps-4" style={{ marginTop: "-15px" }}>Lezzeti</div>
@@ -44,17 +44,16 @@ const Home = () => {
 
             <div className="bg-attachmend">
                 <div className="container d-flex justify-content-end align-items-center" style={{ height: "500px" }}>
-                    <div className="bg-white text-center shadow" style={{ padding: "50px 100px" }}>
-                        <div className="h5">ORGANIC FISH</div>
-                        <div className="display-1 my-4">20%</div>
-                        <div>CERTIFIED ORIGIN OF PRODUCTS</div>
+                    <div className="bg-white text-center shadow w-xl-50 p-xl-5 p-3" style={{ borderRadius: "50px 0 0 50px" }}>
+                        <div className="h4 mb-4">Tamdyr Lezzeti</div>
+                        <div>Ilkinji restoranymyzyň üstünligi bilen joşýan hyjuwyňyz indi täze meýdançada «AWAZA» Milli syýahatçylyk zolagynda. Bu täze ýer diňe bir restoran däl, bu biziň tagallalarymyzyň we hyýalymyzyň anyk beýanydyr. Müşderilerimiz üçin diňe bir tagam duralgasy däl-de, ýatdan çykmajak ýatlamalary ýeri.</div>
                     </div>
                 </div>
             </div>
 
-            <div className="text-center pt-5 mt-5">
-                <div className="ls-2 fs-12 mb-4">KITCHEN ALWAYS OPEN</div>
-                <div className="h1 mb-5">Hot & Tasty Dishes</div>
+            <div className="text-center pt-5 mt-5" id="menu">
+                <div className="ls-2 fs-12 mb-4">LEZZETLI TAGAMLARYMYZ</div>
+                <div className="h1 mb-5">Spesial Menýumuz</div>
             </div>
 
             <div className='container text-center'>
@@ -362,6 +361,27 @@ const Home = () => {
                     </div>
                 </div>
             </div >
+
+            <div className="bg-attachmend-2 d-flex align-items-center justify-content-center" id="contact">
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-xl-3 col-12 bg-warning p-5">
+                            <div className="text-center h3">Habarlaşmak</div>
+                            <div className="text-center h5 mt-4 fw-semibold">Telefon Belgilerimiz</div>
+                            <div>72-64-56 , 72-64-58</div>
+                            <div className="text-center h5 mt-4 fw-semibold">Salgymyz</div>
+                            <div>Awaza, Bagtyýar otel</div>
+                            <div className="text-center h5 mt-4 fw-semibold">Iş wagtymyz</div>
+                            <div>09:00-dan, 23:00 çenli</div>
+                            <div className="text-center h5 mt-4 fw-semibold">E-mail salgymyz</div>
+                            <div>tamdyrlezzeti@gmail.com</div>
+                        </div>
+                        <div className="col-xl-7 col-12 bg-white p-xl-4 p-0">
+                            <iframe title='0' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6841.338342750139!2d52.82794118958942!3d39.97464214955486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x402c199dd1789649%3A0xf1c31c462fdf1760!2sBagtyyar%20Hotel!5e1!3m2!1sen!2s!4v1717825594342!5m2!1sen!2s" style={{ width: "100%", height: "400px" }} allowFullScreen loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
